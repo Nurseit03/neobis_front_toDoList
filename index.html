@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cssreset.css">
+    <title>To Do</title>
+</head>
+<body>
+    <head>
+        <div class="welcome__text">
+            <h1>
+                Whats'up, <span id="user__name">name</span>
+            </h1>
+        </div>
+    </head>
+    <main>
+
+
+        <div class="main__container">
+            <div>
+                <h2>
+                    CREATE A TODO
+                </h2>
+                <label for="input-text">What's on your todo list?</label>
+                <input type="text" id="input-text" name="input-text">
+            </div>
+            <div class="pick__category">
+                <label>
+                    <input type="radio" name="purpose" value="business">
+                     For business
+                 </label>
+                 <label>
+                    <input type="radio" name="purpose" value="personal">
+                     For personal
+                 </label>
+            </div>
+            <button class="add__button">
+                <span class="add__button__text">Add todo</span>
+            </button>
+        </div>
+        
+
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
