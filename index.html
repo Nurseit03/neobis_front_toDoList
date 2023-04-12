@@ -15,30 +15,41 @@
             </h1>
         </div>
     </head>
+
+
+
+
     <main>
 
 
         <div class="main__container">
-            <div>
-                <h2>
+            <div class="create__todo">
+                <h2 style="font-size: 20px;">
                     CREATE A TODO
                 </h2>
-                <label for="input-text">What's on your todo list?</label>
-                <input type="text" id="input-text" name="input-text">
-            </div>
+                    <label for="input__text">What's on your todo list?</label>
+                    <input type="text" id="input__text" class="rectangle" name="input-text">
+
+            <p>Pick category</p>
             <div class="pick__category">
-                <label>
-                    <input type="radio" name="purpose" value="business">
-                     For business
+                <label class="pick__category__purpose">
+                    <input type="radio" name="purpose" value="business" class="pick__category__input" id="pick__category__buisness">
+                    <p class="pick__category__input__text">Business</p>
                  </label>
-                 <label>
-                    <input type="radio" name="purpose" value="personal">
-                     For personal
+                 <label class="pick__category__purpose">
+                    <input type="radio" name="purpose" value="personal" class="pick__category__input" id="pick__category__personal">
+                     <p class="pick__category__input__text">Personal</p> 
                  </label>
             </div>
+
+
             <button class="add__button">
                 <span class="add__button__text">Add todo</span>
             </button>
+
+
+             </div>
+
         </div>
         
 

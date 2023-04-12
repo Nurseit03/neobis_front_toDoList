@@ -1,24 +1,59 @@
 body{
-    background-color: #f8f8f8;
+    background-color: #f7efef;
+}
+.rectangle{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
 }
 .welcome__text{
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
+    margin-top: 45px;
+    font-size: 30px;
 }
 .main__container{
     display: grid;
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
+    margin-top: 45px;
+}
+.create__todo{
+    display: grid;
+    gap: 10px;
+}
+.todo__item{
+    height: 60px;
 }
 .pick__category{
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    height: 100px;
 }
+.pick__category__purpose{
+    border-radius: 10px;
+    width: 48%;
+    height: 130px;
+    background-color: #ffffff;
+}
+.pick__category__input{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: block; 
+    margin-top: 30px; 
+    margin-left: 130px;
+}
+.pick__category__input__text{
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
 .add__button{
-    height: 60px;
+    margin-top:20px;
+    height: 50px;
     border-radius: 10px;
     background-color: rgb(67, 187, 196);
 }

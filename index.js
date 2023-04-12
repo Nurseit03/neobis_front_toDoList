@@ -1,14 +1,15 @@
-function changeUserName(){
-    document.getElementById("user__name").textContent = userName;
-}
+
 function recursivePrompt() {
-    let userName = prompt("Как вас зовут?");
+  let userName = prompt("Как вас зовут?");
     
     if (userName === null || userName === "") {
       recursivePrompt();
     } else {
-      changeUserName();
+      changeUserName(userName);
     }
   }
-  
+
+  function changeUserName(userName){
+    document.getElementById("user__name").textContent = userName;
+}
   recursivePrompt();
