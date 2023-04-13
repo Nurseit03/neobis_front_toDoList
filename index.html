@@ -9,27 +9,26 @@
 </head>
 <body>
     <head>
-        <div class="welcome__text">
-            <h1>
-                Whats'up, <span id="user__name">name</span>
-            </h1>
-        </div>
     </head>
-
-
-
-
     <main>
 
 
         <div class="main__container">
             <div class="create__todo">
+                <div class="welcome__text">
+                    <h1>
+                        Whats'up, <span id="user__name">name</span>
+                    </h1>
+                </div>
                 <h2 style="font-size: 20px;">
                     CREATE A TODO
                 </h2>
-                    <label for="input__text">What's on your todo list?</label>
-                    <input type="text" id="input__text" class="rectangle" name="input-text">
+            <!-- ВВОД ТЕКСТА ЗАДАЧИ -->
+                <label for="input__text">What's on your todo list?</label>
+                <input type="text" id="input__text" name="input-text">
 
+
+            <!-- ВЫБОР КАТЕГОРИИ -->    
             <p>Pick category</p>
             <div class="pick__category">
                 <label class="pick__category__purpose">
@@ -42,13 +41,20 @@
                  </label>
             </div>
 
-
-            <button class="add__button">
+            <!-- КНОПКА ДОБАВЛЕНИЯ ЗАДАЧ -->
+            <button class="add__button" onclick="addTask()">
                 <span class="add__button__text">Add todo</span>
             </button>
 
+            <!-- СПИСОК ЗАДАЧ -->
+            <div class="task__list" id="task__list">
+                <h2 style="font-size: 20px;">
+                    TODO LIST
+                </h2>
 
-             </div>
+            </div>
+
+            </div>
 
         </div>
         

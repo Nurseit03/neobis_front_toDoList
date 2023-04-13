@@ -1,21 +1,9 @@
 body{
     background-color: #f7efef;
 }
-.rectangle{
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-}
-.welcome__text{
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 45px;
-    font-size: 30px;
-}
+
 .main__container{
     display: grid;
-    width: 40%;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 45px;
@@ -23,10 +11,30 @@ body{
 .create__todo{
     display: grid;
     gap: 10px;
+    width: 100%;
 }
-.todo__item{
-    height: 60px;
+/****************************** ТЕКСТ ПРИВЕТСТВИЯ ******************************/
+
+.welcome__text{
+    width: 40%;
+    margin-bottom: 45px;
+    font-size: 30px;
 }
+/****************************** ВВОД ТЕКСТА ЗАДАЧИ ******************************/
+
+#input__text{
+    align-items: center;
+    padding: 3% 3% 3% 3%;
+    width: 100%;
+    max-width: 100%; 
+    min-height: 50px;
+    max-height: auto;
+    border-radius: 10px;
+    word-wrap: break-word; /* Это свойство переносит слова на следующую строку, если они не помещаются на текущей строке */
+    overflow-wrap: break-word; /* Это свойство переносит текст на следующую строку, если он не помещается в контейнере */
+}
+/****************************** ВЫБОРА КАТЕГОРИИ BUISNESS или PERSONAL ******************************/
+
 .pick__category{
     margin-top: 10px;
     display: flex;
@@ -37,6 +45,7 @@ body{
     width: 48%;
     height: 130px;
     background-color: #ffffff;
+    
 }
 .pick__category__input{
     border-radius: 50%;
@@ -50,9 +59,19 @@ body{
     margin-top: 10px;
     margin-left: 120px;
 }
+#pick__category__buisness{
+    border: 2px solid rgb(0, 120, 212);
+}
+#pick__category__personal{
+    border: 2px solid rgb(255, 105, 180);
+}
+
+
+/****************************** КНОПКА ДОБАВЛЕНИЯ ЗАДАЧ ******************************/
 
 .add__button{
     margin-top:20px;
+    margin-bottom: 35px;
     height: 50px;
     border-radius: 10px;
     background-color: rgb(67, 187, 196);
@@ -60,3 +79,39 @@ body{
 .add__button__text{
     color: #ffffff;
 }
+
+/****************************** СПИСОК ЗАДАЧ ******************************/
+
+.task__list{
+    display: grid;
+    gap: 30px;
+}
+.task__list__item{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 3% 3% 3%;
+    min-height: 50px;
+    max-height: auto;
+    width: 100%;
+    max-width: 100%; 
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    word-wrap: break-word; /* Это свойство переносит слова на следующую строку, если они не помещаются на текущей строке */
+    overflow-wrap: break-word;
+}
+.task__list__item button{
+    overflow: hidden;
+    color: #ffffff;
+    width: auto;
+    height: 30px;
+}
+.task__button__edit{
+    background-color: rgb(212, 34, 203);
+    border-radius: 5px;
+}
+.task__button__remove{
+    background-color: rgb(219, 50, 50);
+    border-radius: 5px;
+}
+
