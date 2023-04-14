@@ -48,6 +48,7 @@ body{
     
 }
 .pick__category__input{
+    border:1px solid #ffffff;
     border-radius: 50%;
     width: 35px;
     height: 35px;
@@ -114,4 +115,31 @@ body{
     background-color: rgb(219, 50, 50);
     border-radius: 5px;
 }
+
+.task__list__item--business:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: blue;
+}
+
+.task__list__item--personal:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgb(255, 154, 171);
+}
+.task__buttons{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+
 
