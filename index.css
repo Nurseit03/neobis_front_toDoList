@@ -16,7 +16,6 @@ body{
 /****************************** ТЕКСТ ПРИВЕТСТВИЯ ******************************/
 
 .welcome__text{
-    width: 40%;
     margin-bottom: 45px;
     font-size: 30px;
 }
@@ -30,8 +29,8 @@ body{
     min-height: 50px;
     max-height: auto;
     border-radius: 10px;
-    word-wrap: break-word; /* Это свойство переносит слова на следующую строку, если они не помещаются на текущей строке */
-    overflow-wrap: break-word; /* Это свойство переносит текст на следующую строку, если он не помещается в контейнере */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 /****************************** ВЫБОРА КАТЕГОРИИ BUISNESS или PERSONAL ******************************/
 
@@ -45,7 +44,12 @@ body{
     width: 48%;
     height: 130px;
     background-color: #ffffff;
-    
+}
+.business{
+    border: 2.2px solid rgb(0, 120, 212);
+}
+.personal{
+    border: 2px solid rgb(255, 105, 180);
 }
 .pick__category__input{
     border:1px solid #ffffff;
@@ -60,8 +64,9 @@ body{
     margin-top: 10px;
     margin-left: 120px;
 }
-#pick__category__buisness{
+#pick__category__business{
     border: 2px solid rgb(0, 120, 212);
+
 }
 #pick__category__personal{
     border: 2px solid rgb(255, 105, 180);
@@ -139,6 +144,10 @@ body{
     display: flex;
     width: 20%;
     justify-content: space-between;
+}
+.task__button__save{
+    background-color: rgb(180, 179, 179);
+    border-radius: 5px;
 }
 
 
